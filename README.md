@@ -40,15 +40,12 @@ The Gemini API is used for generating final answers after retrieving the most re
 
 ---
 
-## 📊 Confidence Score Calculation
+##📊 Confidence Score Calculation
+
 The confidence score represents how relevant the retrieved context is to the user query.
 
-Confidence
-=
-Mean of Top-
-𝑘
- Cosine Similarity Scores
 Confidence=Mean of Top-k Cosine Similarity Scores
+
 This score provides a transparent measure of how much the model “trusts” its retrieved data.
 
 ---
@@ -77,3 +74,43 @@ Vector Store	FAISS
 Backend	Python
 Task Queue (Future)	Redis / RabbitMQ
 
+---
+
+## 🧠 Architecture Diagram
+                ┌────────────────────────────┐
+                │        User Query          │
+                └────────────┬───────────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │     Streamlit UI     │
+                  └────────────┬─────────┘
+                             │
+                             ▼
+              ┌────────────────────────────────┐
+              │   Embedding Model (MiniLM-L6)   │
+              └────────────────┬────────────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+                ▼                             ▼
+      ┌─────────────────┐           ┌─────────────────────┐
+      │ Knowledge Base   │  ----->  │  FAISS Vector Store  │
+      └─────────────────┘           └─────────────────────┘
+                               │
+                               ▼
+                  ┌──────────────────────────┐
+                  │   Top-k Relevant Chunks   │
+                  └────────────┬─────────────┘
+                               │
+                               ▼
+                  ┌──────────────────────────┐
+                  │   Gemini LLM (Answer)    │
+                  └────────────┬─────────────┘
+                               │
+                               ▼
+                     ┌──────────────────┐
+                     │  Final Response  │
+                     └──────────────────┘
+
+                     
