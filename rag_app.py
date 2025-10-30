@@ -25,13 +25,15 @@ except ValueError as e:
 
 # Knowledge Base (Mini Corpus) 
 DOCUMENTS = {
-    "Document_A_Mars_Colony": "The first human colony on Mars will likely face challenges with radiation shielding and growing food in Martian soil, known as regolith. The current plan involves using inflatable habitats before permanent underground structures can be built.",
-    "Document_B_AI_Safety_Ethics": "AI Safety focuses on preventing autonomous systems from causing harm. A key ethical debate is the 'Trolley Problem' as applied to self-driving cars, where an immediate, difficult decision must be made to minimize overall damage.",
-    "Document_C_Renewable_Energy": "Solar power and wind energy are leading the transition to renewables. A major challenge is energy storage, which is currently addressed by large-scale lithium-ion battery banks, but better solutions like flow batteries are under research.",
-    "Document_D_Quantum_Computing": "Quantum computers use qubits, which can exist in a superposition of states, allowing them to solve problems that are intractable for classical computers. Shor's algorithm, for example, could theoretically break current public-key cryptography.",
-    "Document_E_Deep_Learning_Basics": "Deep learning is a subfield of machine learning that uses neural networks with multiple layers (hence 'deep'). Key architectures include Convolutional Neural Networks (CNNs) for image processing and Recurrent Neural Networks (RNNs) for sequence data.",
-    "Document_F_Black_Holes": "A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it. The boundary beyond which no escape is possible is called the event horizon."
+    "Document_A_Walking_Robots": "Walking robots such as Boston Dynamics’ Atlas and Figure AI’s bipedal machines are now capable of humanlike movement using reinforcement learning and end-to-end motion control. They can navigate stairs, terrain, and manipulate objects, advancing humanoid mobility research.",
+    "Document_B_Humanoid_Embodied_AI": "Humanoid robots represent the embodiment of general-purpose intelligence, combining vision, language, and motor control. Recent systems from Figure AI and Toyota Research Institute learn from human demonstration, adapting to unstructured environments and complex human interaction.",
+    "Document_C_Agentic_AI_Trends": "Agentic AI describes autonomous agents that reason, plan, and act toward goals without direct supervision. In 2025, multi-agent collaboration, self-healing AI systems, and workflow automation tools have accelerated adoption across industries such as finance and healthcare.",
+    "Document_D_Agentic_AI_Risks": "As AI agents gain autonomy, risks such as misalignment, manipulation, and emergent behavior increase. Research frameworks like AURA and Anthropic’s safety studies aim to identify governance principles ensuring transparency, explainability, and secure autonomy in agentic systems.",
+    "Document_E_Agentic_AI_Frameworks": "Frameworks like Microsoft AutoGen, LangChain, and SuperAGI provide infrastructure for building scalable agentic systems. These architectures integrate reasoning, memory, and feedback loops with vector databases and event-driven APIs for autonomous task orchestration.",
+    "Document_F_Emerging_AI_Projects": "Recent research includes MIT’s studies on AI negotiation behavior, AWS’s 2025 agentic AI funding programs, and UiPath’s enterprise integration research. The next phase of agentic AI will focus on human-agent collaboration, interpretability, and scalable trust mechanisms.",
+    "harikrishnan_resume": "Harikrishnan V is a Machine Learning Engineer specializing in LLMs, RAG, and TinyML. Experienced in developing AI-driven solutions, he achieved 98% accuracy in AI-based cost estimation and built a RAG chatbot that improved developer productivity by 50%. Skilled in Python, FastAPI, TensorFlow, SQL, and MongoDB, he has delivered production-level ML systems in enterprise environments. His portfolio includes projects like real-time TinyML health monitoring on NodeMCU and autonomous agent-based productivity tools. Educational background: BCA in Data Science from Amrita Vishwa Vidyapeetham (2023)."
 }
+
 
 @st.cache_resource
 def initialize_system():
@@ -135,7 +137,7 @@ def retrieve_and_generate(query: str, k: int = 3):
 st.set_page_config(page_title="Mini RAG QA System", layout="wide")
 st.title("🤖 Mini RAG QA System with Gemini API")
 st.markdown("A small Retrieval-Augmented Generation system using **Sentence Transformers**, **FAISS**, and the **Gemini API**.")
-st.markdown("Try asking about **Mars**, **Quantum Computing**, or **AI Safety**.")
+st.markdown("Try asking about **Latest updates in AI**, **Agentic AI**, **AI Safety**, or **Harikrishnan V** .")
 
 # Initialize chat history
 if "messages" not in st.session_state:
