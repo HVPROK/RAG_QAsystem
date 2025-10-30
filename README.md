@@ -24,7 +24,9 @@ bash
 Copy code
 streamlit run rag_app.py
 
-🧩 Design Overview
+---
+
+## 🧩 Design Overview
 The RAG system follows a modular architecture with clear separation between document retrieval and answer generation.
 
 🔹 Embedding Model
@@ -36,7 +38,9 @@ Employs FAISS (Facebook AI Similarity Search) for fast and scalable cosine simil
 🔹 LLM Integration
 The Gemini API is used for generating final answers after retrieving the most relevant context.
 
-📊 Confidence Score Calculation
+---
+
+## 📊 Confidence Score Calculation
 The confidence score represents how relevant the retrieved context is to the user query.
 
 Confidence
@@ -47,7 +51,9 @@ Mean of Top-
 Confidence=Mean of Top-k Cosine Similarity Scores
 This score provides a transparent measure of how much the model “trusts” its retrieved data.
 
-🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
 If given additional time, the system can be enhanced for production readiness and scalability with the following improvements:
 
 🧵 1. Asynchronous Ingestion & Queuing
@@ -70,3 +76,4 @@ Enable scalable deployment through containerization or microservices.
 Vector Store	FAISS
 Backend	Python
 Task Queue (Future)	Redis / RabbitMQ
+
