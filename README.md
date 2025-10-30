@@ -40,7 +40,7 @@ The Gemini API is used for generating final answers after retrieving the most re
 
 ---
 
-##📊 Confidence Score Calculation
+## 📊 Confidence Score Calculation
 
 The confidence score represents how relevant the retrieved context is to the user query.
 
@@ -114,3 +114,4 @@ Task Queue (Future)	Redis / RabbitMQ
                      └──────────────────┘
 
                      
+
