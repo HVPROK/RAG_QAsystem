@@ -114,4 +114,13 @@ Task Queue (Future)	Redis / RabbitMQ
                      └──────────────────┘
 
                      
+---
+
+## 🧑‍💻 Author
+
+**Harikrishnan V**  
+AI Engineer | Machine Learning & RAG Systems Developer  
+
+🔗 [LinkedIn](https://www.linkedin.com/in/harivansu)  
+💻 [GitHub](https://github.com/yourusername)
 
