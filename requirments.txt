@@ -1,0 +1,9 @@
+#required_packages 
+
+python-dotenv
+google-genai
+streamlit
+pandas
+sentence-transformers
+faiss-cpu
+numpy
