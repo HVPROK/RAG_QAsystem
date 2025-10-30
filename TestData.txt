@@ -1,0 +1,15 @@
+DOCUMENTS = {
+    "Document_A_Walking_Robots": "Walking robots, such as Boston Dynamics’ Atlas and Figure AI’s humanoids, now use reinforcement learning and unified AI control systems for motion, balance, and manipulation. These advancements enable robots to walk naturally, climb stairs, and interact safely with their environments.",
+
+    "Document_B_Humanoid_Embodied_AI": "Humanoid robots represent the next stage of embodied artificial intelligence. They combine visual perception, natural language understanding, and physical control to perform general-purpose tasks. Research from Figure AI and Toyota Research Institute focuses on robots that learn by observing humans instead of being manually programmed.",
+
+    "Document_C_Agentic_AI_Trends": "Agentic AI refers to autonomous systems capable of reasoning, planning, and executing actions to achieve goals with minimal human input. In 2025, agentic AI trends include multi-agent collaboration, self-correcting workflows, and autonomous business operations driven by adaptive planning models.",
+
+    "Document_D_Agentic_AI_Risks": "As agentic AI systems gain autonomy, new safety and governance challenges emerge. Studies by Anthropic and others show risks of misaligned behavior or manipulative strategies. Frameworks like AURA and constitutionally aligned models aim to ensure transparency, accountability, and ethical AI decision-making.",
+
+    "Document_E_Agentic_AI_Frameworks": "Frameworks such as LangChain, Microsoft AutoGen, and SuperAGI power the agentic AI ecosystem. They integrate memory, reasoning, and action modules using vector databases and event-driven architectures, enabling large-scale coordination among intelligent agents.",
+
+    "Document_F_Emerging_AI_Projects": "Recent projects like MIT’s research on AI negotiation, AWS’s funding for autonomous agent frameworks, and UiPath’s enterprise integrations show how agentic AI is reshaping industries. Future directions include human-agent teamwork, interpretability, and trusted autonomous decision systems.",
+
+    "harikrishnan_resume": "Harikrishnan V is a Machine Learning Engineer specializing in LLMs, RAG, and TinyML. Experienced in developing AI-driven solutions, he achieved 98% accuracy in AI-based cost estimation and built a RAG chatbot that improved developer productivity by 50%. Skilled in Python, FastAPI, TensorFlow, SQL, and MongoDB, he has delivered production-level ML systems in enterprise environments. His portfolio includes projects like real-time TinyML health monitoring on NodeMCU and autonomous agent-based productivity tools. Educational background: BCA in Data Science from Amrita Vishwa Vidyapeetham (2023)."
+}
